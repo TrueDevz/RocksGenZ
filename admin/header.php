@@ -8,7 +8,7 @@ requireLogin();
 
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard - Rocks GenZ Granites</title>
+    <title>Admin Dashboard - Rocks Genz Granites</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <style>
         .admin-layout {

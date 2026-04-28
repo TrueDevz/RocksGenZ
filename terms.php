@@ -9,7 +9,7 @@ require_once __DIR__ . '/includes/header.php';
 
     <div style="line-height: 1.8; color: #333;">
         <h3 style="margin-top: 2rem;">1. Acceptance of Terms</h3>
-        <p>By accessing and using the Rocks GenZ Granites website, you agree to be bound by these Terms of Service. If
+        <p>By accessing and using the Rocks Genz Granites website, you agree to be bound by these Terms of Service. If
             you do not agree to these terms, please do not use our website.</p>
 
         <h3 style="margin-top: 2rem;">2. Products and Natural Variations</h3>
@@ -26,7 +26,7 @@ require_once __DIR__ . '/includes/header.php';
             buyer according to the agreed Incoterms.</p>
 
         <h3 style="margin-top: 2rem;">5. Intellectual Property</h3>
-        <p>All content on this website, including text, graphics, and logos, is the property of Rocks GenZ Granites and
+        <p>All content on this website, including text, graphics, and logos, is the property of Rocks Genz Granites and
             is protected by international copyright laws.</p>
     </div>
 </section>

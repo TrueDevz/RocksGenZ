@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <head>
     <meta charset="UTF-8">
-    <title>Admin Login - Rocks GenZ Granites</title>
+    <title>Admin Login - Rocks Genz Granites</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <style>
         body {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <div class="login-box">
-        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Rocks GenZ Granites Admin</h2>
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Rocks Genz Granites Admin</h2>
 
         <?php if ($error): ?>
             <div style="background: #f8d7da; color: #721c24; padding: 10px; margin-bottom: 1rem; border-radius: 4px;">

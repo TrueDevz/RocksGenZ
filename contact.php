@@ -33,7 +33,8 @@ $product_interest = $_GET['product'] ?? '';
     style="height: 40vh; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/hero_bg.png'); background-size: cover; background-position: center;">
     <div class="hero-content">
         <h1 style="font-size: 3rem;">Contact Us</h1>
-        <p>Connect with us for premium rough granite block supply, bulk export requirements, and reliable global stone sourcing.</p>
+        <p>Connect with us for premium rough granite block supply, bulk export requirements, and reliable global stone
+            sourcing.</p>
     </div>
 </section>
 
@@ -52,7 +53,7 @@ $product_interest = $_GET['product'] ?? '';
             </div>
             <div>
                 <h4 style="font-size: 1rem; opacity: 0.8; margin-bottom: 0.5rem;">Email</h4>
-                <p><?= htmlspecialchars($settings['contact_email'] ?? 'info@Rocks GenZ Granites.com') ?></p>
+                <p><?= htmlspecialchars($settings['contact_email'] ?? 'info@Rocks Genz Granites.com') ?></p>
             </div>
         </div>
 

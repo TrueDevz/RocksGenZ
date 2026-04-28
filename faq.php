@@ -18,7 +18,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
         <h3 style="color: var(--primary-color);">2. Do you ship globally?</h3>
-        <p>Yes, Rocks GenZ Granites exports to most countries worldwide. We handle all export documentation from China
+        <p>Yes, Rocks Genz Granites exports to most countries worldwide. We handle all export documentation from China
             and can arrange FOB or CIF shipping terms based on your preference.</p>
     </div>
     <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">

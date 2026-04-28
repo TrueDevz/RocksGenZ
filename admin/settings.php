@@ -10,13 +10,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'contact_email' => $_POST['contact_email'] ?? '',
         'contact_phone' => $_POST['contact_phone'] ?? '',
         'contact_address' => $_POST['contact_address'] ?? '',
-        'about_summary' => $_POST['about_summary'] ?? ''
+        'about_summary' => $_POST['about_summary'] ?? '',
+        'social_facebook' => $_POST['social_facebook'] ?? '',
+        'social_instagram' => $_POST['social_instagram'] ?? '',
+        'social_twitter' => $_POST['social_twitter'] ?? '',
+        'social_linkedin' => $_POST['social_linkedin'] ?? ''
     ];
     
     try {
-        $stmt = $pdo->prepare("UPDATE site_settings SET setting_value = ? WHERE setting_key = ?");
         foreach ($settings as $key => $value) {
-            $stmt->execute([$value, $key]);
+            $check = $pdo->prepare("SELECT COUNT(*) FROM site_settings WHERE setting_key = ?");
+            $check->execute([$key]);
+            if ($check->fetchColumn() > 0) {
+                $stmt = $pdo->prepare("UPDATE site_settings SET setting_value = ? WHERE setting_key = ?");
+                $stmt->execute([$value, $key]);
+            } else {
+                $stmt = $pdo->prepare("INSERT INTO site_settings (setting_key, setting_value) VALUES (?, ?)");
+                $stmt->execute([$key, $value]);
+            }
         }
         $message = "Settings updated successfully.";
     } catch (PDOException $e) {
@@ -65,6 +76,28 @@ while ($row = $stmt->fetch()) {
         <div style="margin-bottom: 2rem;">
             <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Footer About Summary</label>
             <textarea name="about_summary" required rows="4" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 4px; resize: vertical;"><?= htmlspecialchars($current_settings['about_summary'] ?? '') ?></textarea>
+        </div>
+
+        <h3 style="margin-bottom: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">Social Media Links</h3>
+
+        <div style="margin-bottom: 1.5rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Facebook URL</label>
+            <input type="url" name="social_facebook" value="<?= htmlspecialchars($current_settings['social_facebook'] ?? '') ?>" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Instagram URL</label>
+            <input type="url" name="social_instagram" value="<?= htmlspecialchars($current_settings['social_instagram'] ?? '') ?>" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Twitter / X URL</label>
+            <input type="url" name="social_twitter" value="<?= htmlspecialchars($current_settings['social_twitter'] ?? '') ?>" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">LinkedIn URL</label>
+            <input type="url" name="social_linkedin" value="<?= htmlspecialchars($current_settings['social_linkedin'] ?? '') ?>" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 4px;">
         </div>
         
         <button type="submit" class="btn">Save Settings</button>

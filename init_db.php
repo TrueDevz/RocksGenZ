@@ -4,7 +4,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'Rocks GenZ Granites';
+$dbname = 'Rocks Genz Granites';
 
 try {
     // Connect without database selected
@@ -103,8 +103,8 @@ try {
     $stmt = $pdo->query("SELECT COUNT(*) FROM `site_settings`");
     if ($stmt->fetchColumn() == 0) {
         $pdo->exec("INSERT INTO `site_settings` (`setting_key`, `setting_value`) VALUES 
-            ('site_name', 'Rocks GenZ Granites Granite'),
-            ('contact_email', 'info@Rocks GenZ Granites.com'),
+            ('site_name', 'Rocks Genz Granites Granite'),
+            ('contact_email', 'info@Rocks Genz Granites.com'),
             ('contact_phone', '+86 123 456 7890'),
             ('contact_address', 'Guangdong, China'),
             ('about_summary', 'Premium natural stone and granite export from China.')

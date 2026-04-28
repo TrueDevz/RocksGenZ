@@ -33,11 +33,18 @@ if (empty($featuredProducts)) {
     </div>
     <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">
         <p style="font-size: 1.1rem; color: #555; text-align: justify;">
-            Built on a foundation of trust, quality, and quarry expertise, Rocks GenZ Granites stands for excellence in every block we deliver.<br><br>
-            Our legacy is shaped by years of experience in sourcing premium rough granite blocks from India's finest quarries. We combine traditional stone knowledge with modern export standards to serve global markets with confidence.<br><br>
-            Each block reflects our commitment to strength, consistency, and natural quality. From quarry selection to port dispatch, every stage is managed with precision and care.<br><br>
-            Our reputation is built on dependable supply, transparent business, and long-term partnerships. We serve international buyers with export-ready granite blocks tailored for large-scale processing needs.<br><br>
-            Strict quality checks ensure every shipment meets global expectations. With every container shipped, we reinforce our promise of reliability and value. Our legacy is not just in stone — it is in the trust we build worldwide.
+            Built on a foundation of trust, quality, and quarry expertise, Rocks Genz Granites stands for excellence in
+            every block we deliver.<br><br>
+            Our legacy is shaped by years of experience in sourcing premium rough granite blocks from India's finest
+            quarries. We combine traditional stone knowledge with modern export standards to serve global markets with
+            confidence.<br><br>
+            Each block reflects our commitment to strength, consistency, and natural quality. From quarry selection to
+            port dispatch, every stage is managed with precision and care.<br><br>
+            Our reputation is built on dependable supply, transparent business, and long-term partnerships. We serve
+            international buyers with export-ready granite blocks tailored for large-scale processing needs.<br><br>
+            Strict quality checks ensure every shipment meets global expectations. With every container shipped, we
+            reinforce our promise of reliability and value. Our legacy is not just in stone — it is in the trust we
+            build worldwide.
         </p>
         <br>
         <a href="/about.php" class="btn btn-outline">Learn More About Us</a>
@@ -110,7 +117,7 @@ if (empty($featuredProducts)) {
 
 <section class="section">
     <div class="section-title">
-        <h2>Why Choose Rocks GenZ Granites?</h2>
+        <h2>Why Choose Rocks Genz Granites?</h2>
     </div>
     <div class="grid-4" style="text-align: center;">
         <div style="padding: 2rem;">

@@ -19,7 +19,7 @@ $menuItems = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($settings['site_name'] ?? 'Rocks GenZ Granites Granite') ?></title>
+    <title><?= htmlspecialchars($settings['site_name'] ?? 'Rocks Genz Granites Granite') ?></title>
     <meta name="description" content="<?= htmlspecialchars($settings['about_summary'] ?? '') ?>">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -28,7 +28,11 @@ $menuItems = $stmt->fetchAll();
 
     <header class="site-header">
         <div class="nav-container">
-            <a href="/index.php" class="logo">Next<span>Genz</span></a>
+            <a href="/index.php" class="logo"
+                style="line-height: 1.1; display: flex; flex-direction: column; align-items: flex-start; text-decoration: none;">
+                <img src="/assets/images/Main_logoNew.png" alt="Rocks GenZ Granites Logo"
+                    style="max-height: 48px; width: auto; object-fit: contain;">
+            </a>
 
             <ul class="nav-links">
                 <?php foreach ($menuItems as $item): ?>

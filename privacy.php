@@ -26,7 +26,8 @@ require_once __DIR__ . '/includes/header.php';
 
         <h3 style="margin-top: 2rem;">5. Contact Us</h3>
         <p>If you have any questions about this Privacy Policy, please contact us at
-            <?= htmlspecialchars($settings['contact_email'] ?? 'info@Rocks GenZ Granites.com') ?>.</p>
+            <?= htmlspecialchars($settings['contact_email'] ?? 'info@Rocks Genz Granites.com') ?>.
+        </p>
     </div>
 </section>
 
