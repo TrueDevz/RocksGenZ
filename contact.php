@@ -11,13 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone = $_POST['phone'] ?? '';
     $message = $_POST['message'] ?? '';
     $honeypot = $_POST['website'] ?? ''; // Honeypot field
-    $math_answer = $_POST['math_answer'] ?? '';
-    $math_correct = $_POST['math_correct'] ?? '';
-
     if (!empty($honeypot)) {
         $error = "Spam detected.";
-    } elseif ($math_answer !== $math_correct) {
-        $error = "Incorrect math answer. Please try again.";
     } elseif (empty($name) || empty($email) || empty($message)) {
         $error = "Please fill in all required fields.";
     } else {
@@ -31,10 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Generate simple math captcha
-$num1 = rand(1, 10);
-$num2 = rand(1, 10);
-$math_correct = $num1 + $num2;
 $product_interest = $_GET['product'] ?? '';
 ?>
 
@@ -42,7 +33,7 @@ $product_interest = $_GET['product'] ?? '';
     style="height: 40vh; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/hero_bg.png'); background-size: cover; background-position: center;">
     <div class="hero-content">
         <h1 style="font-size: 3rem;">Contact Us</h1>
-        <p>Partner with us for your next large-scale construction or export project.</p>
+        <p>Connect with us for premium rough granite block supply, bulk export requirements, and reliable global stone sourcing.</p>
     </div>
 </section>
 
@@ -115,14 +106,7 @@ $product_interest = $_GET['product'] ?? '';
                             style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 4px; font-family: inherit; resize: vertical;"><?= $product_interest ? "I am interested in bulk orders for " . htmlspecialchars($product_interest) . "." : "" ?></textarea>
                     </div>
 
-                    <div
-                        style="margin-bottom: 2rem; background-color: var(--bg-secondary); padding: 1rem; border-radius: 4px;">
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Security Question: What is
-                            <?= $num1 ?> + <?= $num2 ?>? *</label>
-                        <input type="number" name="math_answer" required
-                            style="width: 100px; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 4px; font-family: inherit;">
-                        <input type="hidden" name="math_correct" value="<?= $math_correct ?>">
-                    </div>
+
 
                     <button type="submit" class="btn">Send Inquiry</button>
                 </form>

@@ -32,7 +32,41 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<section class="section" style="background-color: var(--bg-secondary);">
+<section class="section" style="text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <video width="100%" controls preload="metadata" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <source src="/assets/videos/demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section class="section" style="background-color: var(--bg-secondary); text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto 3rem auto;">
+        <h2 style="margin-bottom: 0;">Aryan Mittal</h2>
+        <p style="color: #777; margin-bottom: 2rem;">Founder, Loutus Export and Import company</p>
+        
+        <h3 style="font-size: 1.5rem; text-transform: uppercase; margin-bottom: 1rem;">We don't just provide stone —<br>we create experiences</h3>
+        
+        <p style="color: #555; line-height: 1.6; text-align: justify;">
+            Loutus Export and Import company was built on a simple belief: natural stone is more than a material—it's a story. Our collections reflect precision, sustainability, and artistry. With every marble slab, granite finish, and custom stone solution, we aim to deliver depth, character, and a lasting impression. Our mission is to bring India's finest stones to the world through trust, innovation, and craftsmanship.
+        </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+        <div class="card" style="padding: 2rem; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: #fff;">
+            <h3 style="margin-bottom: 1rem;">Our Mission</h3>
+            <p style="color: #555;">To deliver premium, ethically sourced marble and granite products that enhance modern spaces. We aim to blend quality, sustainability, and innovation to redefine natural stone experiences around the world.</p>
+        </div>
+        <div class="card" style="padding: 2rem; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: #fff;">
+            <h3 style="margin-bottom: 1rem;">Our Vision</h3>
+            <p style="color: #555;">To become a globally admired Indian stone brand known for premium marble, granite, and custom stone artistry—while staying rooted in heritage craftsmanship and modern innovation.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
     <div class="section-title">
         <h2>Our Core Values</h2>
     </div>
